@@ -139,7 +139,7 @@ Hier ist mein Netzwerkplan zu sehen. Was einem auffallen mag, aber nicht ganz Ve
 
 
 ### 06 Schichtenmodell
-![alt text](Bilder/schichtenmodell.PNG "schichtenmodell")
+![alt text](Bilder/schichtenmodell.png "schichtenmodell")
 
 
 ## 35 Sicherheit
