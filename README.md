@@ -51,7 +51,7 @@ docker run -dit --name apachevolume -p 5050:80 apachevolume
 ````
 
 Hier der laufende Webserver mit dem persistenten Speicher:
-![alt text](bilder/webserver.png "Webserver")
+![alt text](bilder/webserver.PNG "Webserver")
 
 ### 04 PHPMyAdmin und MySql kombinieren und verwenden.
 
@@ -85,7 +85,7 @@ docker run --name my-own-phpmyadmin -d --link my-own-mysql:db -p 8081:80 phpmyad
 
 Sobald beide Systeme aufgesetzt wurden, kann dies überprüft werden, indem man versucht sie über das Web zu erreichen über localhost:8081
 
-![alt text](bilder/phpmyadmin.png "PHPMyAdmin")
+![alt text](bilder/phpmyadmin.PNG "PHPMyAdmin")
 
 ### 05 Ticketsystem
 
@@ -101,11 +101,11 @@ docker container run --rm --name zammad -p 8081:80 zammad/zammad
 
 Anschliessend kann auch das Ticketsystem getestet werden indem man veruscht über das Webinterface zuzugreifen:
 
-![alt text](bilder/ticketsystempre.png "Ticketsystem")
+![alt text](bilder/ticketsystempre.PNG "Ticketsystem")
 
 Nach der Konfiguration sieht das Ticketsystem wie folgt aus:
 
-![alt text](bilder/ticketsystem.png "Ticketsystem") 
+![alt text](bilder/ticketsystem.PNG "Ticketsystem") 
 
 Mehr zu meinen Ideen zum Ticketsystem ist unter dem Kapitel Kubernetes zu finden.
 
@@ -135,7 +135,7 @@ Folgend eine von mir nachgeführte Liste zu den wichtigstesn Docker Befehlen:
 
 Hier ist mein Netzwerkplan zu sehen. Was einem auffallen mag, aber nicht ganz Verständlich ist auf dem ersten Blick ist, warum ich jeweils immer zuert ein VPN aufbaue über den M300CL01 und danach auf den m300-20-st18c, wenn ich doch von meinem PC aus mich auf dem m300-20-st18c hätte verbinden können. Das liegt daran ganz einfach daran, dass ich nicht immer irgendwelche Programme auf meinem Privaten PC installieren möchte, deshalb mache ich das auf einer VM, welche ich nach dem Modul wieder löschen werde.
 
-![alt text](Bilder/netzwerkplan.png "Netzwerkplan")
+![alt text](Bilder/netzwerkplan.PNG "Netzwerkplan")
 
 
 ## 35 Sicherheit
