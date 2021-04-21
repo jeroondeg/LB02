@@ -149,7 +149,7 @@ Hier ist mein Netzwerkplan zu sehen. Was einem auffallen mag, aber nicht ganz Ve
 
 ## 35 Sicherheit
 
-### 01 Serviuce Überwachung 
+### 01 Service Überwachung 
 Hier habe ich das Programm Cadvisro in den Betrieb genommen um Standardwerte von einem Container mir anschauen zu können wie zum Beispiel die CPU Belastung der Speicher etc. Dazu wurde als erstes das Image google/cadvisor vom Dockerhub heruntergeladen.
 
 Hier ein allgemeiner Auszug meiner Images, unteranderem auch das Image vom Cadvisor.
@@ -191,7 +191,7 @@ $ docker run -d --log-driver=syslog ubuntu bash -c 'i=0; while true; do i=$((i+1
 $ tail -f /var/log/syslog
 ````
 
-### 03 Weitere Sicherheitstipps
+### 03 Weitere Sicherheitsmassnahemn
 
 Hier sind noch weitere Sicherheitstipps welche einem bei einer Verbesserung oder Verschäfung der Sicherheit helfen könnten.
 
@@ -217,18 +217,27 @@ $ docker run -d --restart=on-failure:10 my-flaky-image
 ````
 $ docker run --read-only ubuntu touch x
 ````
-* Capabilities einschränken
-````
-$ docker run --cap-drop all --cap-add CHOWN ubuntu chown 100 /tmp
-````
-* Ressourcenbeschränkungen anwenden
-````
-$ docker run --ulimit cpu=12:14 amouat/stress stress --cpu 1
-````
+
+### 04 Travis CI
+Mit Travis CI kann man eine sogenannte Continuous Integration anbindung machen. Der Sinn dahinter ist, dass man bei jedem push Request einem Travis Script vorgeführt wird, welcher dann automatisch sagt, ob er Push Request in Ordnung ist. Somit kann man schon vieles automatisieren.
+
+Als erstes gehts drum sich einen Account auf der Webseite https://travis-ci.com/ zu erstellen und diesen mit Github zu verknüpfen.
+
+Danach sobald man eingeloggt ist muss man den Knopf Aktivieren drücken.
+
+Falls man alles korrekt gemacht hat, sollte man auf folgende Seite landen.
+
+![alt text](bilder/travisci.PNG "Travis CI")
+
+Nun kann man die Konfigurationen machen, damit das Programm selber bei Push requests ein Script durchläuft, dazu habe ich auf meinem Github 3 Files abgelegt.
+
+Wenn man alle drei Files 1:1 kopiert hat man den gleichen Check wie ich eingerichtet, nun meldet Travis CI bei jedem Push Request, ob der Request ok war. 
+
+![alt text](bilder/traviscipassed.PNG "Travis CI")
+
+Dies kann man natürlich so weit ausbauen, dass man schon vieles abfangen kann, hier habe ich aber schon ein kleines Verständnis für diese Technologie entwickelt.
 
 ## 40 Kubernetes
-
-### 01 Einleitung
 
 Ich habe mich sehr auf Kubernetes gefreut, da ich den immensen Nutzungsgebiet vom Programm sehe, leider lief nicht alles wie geplant. Ich habe versucht das Ticketssystem über Kubernetes zu Orchestrieren. Als ich das nicht alleine geschafft habe, habe ich mich mit Herrn Altintas, Ardito und Aziri zusammen drangesetzt, damit ich das mit ihnen zusammen lösen kann. Jedoch hat auch dies nicht wie geplant geklappt. Wir haben Pods, Deployments und einen Service erstellt und bis spät in die Nacht versucht herauszufinden an was es liegt, leider sind wir nicht auf die Lösung gekommen.
 
