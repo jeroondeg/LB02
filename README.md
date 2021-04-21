@@ -3,7 +3,7 @@
 ## Inhaltsverzeichnis
 * [30 Container](#30-Container)
 * [35 Sicherheit](#35-Sicherheit)
-* [40 Kubernetes (k8s)](#40-Kubernetes-(k8s))
+* [40 Kubernetes (k8s)](#40-Kubernetes)
 
 ## 30 Container
 Was ist Containersierung und was sind die Vorteile?
@@ -226,7 +226,7 @@ $ docker run --cap-drop all --cap-add CHOWN ubuntu chown 100 /tmp
 $ docker run --ulimit cpu=12:14 amouat/stress stress --cpu 1
 ````
 
-## 40 Kubernetes (k8s)
+## 40 Kubernetes
 
 ### 01 Einleitung
 
