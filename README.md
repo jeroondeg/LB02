@@ -135,11 +135,11 @@ Folgend eine von mir nachgeführte Liste zu den wichtigstesn Docker Befehlen:
 
 Hier ist mein Netzwerkplan zu sehen. Was einem auffallen mag, aber nicht ganz Verständlich ist auf dem ersten Blick ist, warum ich jeweils immer zuert ein VPN aufbaue über den M300CL01 und danach auf den m300-20-st18c, wenn ich doch von meinem PC aus mich auf dem m300-20-st18c hätte verbinden können. Das liegt daran ganz einfach daran, dass ich nicht immer irgendwelche Programme auf meinem Privaten PC installieren möchte, deshalb mache ich das auf einer VM, welche ich nach dem Modul wieder löschen werde.
 
-![alt text](Bilder/netz.PNG "Netzwerkplan")
+![alt text](bilder/netz.PNG "Netzwerkplan")
 
 
 ### 06 Schichtenmodell
-![alt text](Bilder/schichtenmodell.png "schichtenmodell")
+![alt text](bilder/schichtenmodell.png "schichtenmodell")
 
 
 ## 35 Sicherheit
@@ -148,7 +148,7 @@ Hier ist mein Netzwerkplan zu sehen. Was einem auffallen mag, aber nicht ganz Ve
 Hier habe ich das Programm Cadvisro in den Betrieb genommen um Standardwerte von einem Container mir anschauen zu können wie zum Beispiel die CPU Belastung der Speicher etc. Dazu wurde als erstes das Image google/cadvisor vom Dockerhub heruntergeladen.
 
 Hier ein allgemeiner Auszug meiner Images, unteranderem auch das Image vom Cadvisor.
-![alt text](Bilder/dockerimages.PNG "dockerimages")
+![alt text](bilder/dockerimages.PNG "dockerimages")
 
 Im nächsten Schritt wurde der Container auch schon gestartet und der Port 8080 wurde auf den Port 8080 weitergeleitet. Dazu wurde folgender Befehl verwendet:
 
