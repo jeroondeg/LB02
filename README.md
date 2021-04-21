@@ -144,7 +144,7 @@ Hier ist mein Netzwerkplan zu sehen. Was einem auffallen mag, aber nicht ganz Ve
 Hier habe ich das Programm Cadvisro in den Betrieb genommen um Standardwerte von einem Container mir anschauen zu können wie zum Beispiel die CPU Belastung der Speicher etc. Dazu wurde als erstes das Image google/cadvisor vom Dockerhub heruntergeladen.
 
 Hier ein allgemeiner Auszug meiner Images, unteranderem auch das Image vom Cadvisor.
-![alt text](Bilder/dockerimages.png "dockerimages")
+![alt text](Bilder/dockerimages.PNG "dockerimages")
 
 Im nächsten Schritt wurde der Container auch schon gestartet und der Port 8080 wurde auf den Port 8080 weitergeleitet. Dazu wurde folgender Befehl verwendet:
 
@@ -154,7 +154,7 @@ docker run --volume=/:/rootfs:ro --volume=/var/run:/var/run:rw --volume=/sys:/sy
 
 Zum Schluss kann man dann mit dem ausgewählte Port bei mir wäre dies jetzt 8080, auf die Seite via Browser zugegriffen werden. 
 
-![alt text](bilder/cadvisor.png "cadvisor")
+![alt text](bilder/cadvisor.PNG "cadvisor")
 
 ### 02 Logging
 
