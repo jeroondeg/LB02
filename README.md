@@ -1,17 +1,9 @@
 # M300-Services-LB02
 
 ## 30 Container
-### Was versteht man unter Containisierung?
-Bei der Containerisierung handelt es sich um eine Art Virtualisierung auf Anwendungsebene, bei der mehrere isolierte Userspace-Instanzen auf einem einzelnen Kernel ausgeführt werden können. Diese Instanzen werden Container genannt.
+Was ist Containersierung und was sind die Vorteile?
 
-### Welche Vorteile bringt es mit sich?
-#### Resourcenbedarf 
-* Container benötigen auf dem Server weniger Ressourcen als virtuelle Maschinen und sind normalerweise innerhalb weniger Sekunden gestartet.
-#### Elastizität
- * Container sind hochelastisch und müssen nicht mit einer bestimmten Menge an Ressourcen ausgestattet werden. Dies bedeutet, dass Container die Ressourcen des Servers effizienter und dynamischer nutzen können.
-#### Performance 
-* Bei hohen, konkurrierenden Ressourcenanforderungen ist die Leistung von Anwendungen  die aus einer Containerumgebung ausgeführt werden weitaus besser als bei der Ausführung in einer virtuellen Maschine.
-
+Container ist die lightweight Lösung um verschiedene Services im Netz bereitzustellen. Sie bringen mehrere Vorteile mit sich, zum Beispiel sind sie Ressourcensparend, leicht zum managen / migrieren und leicht zun skalieren. Mit Container fällt es uns jetzt schon einfacher gewisse Tasks zu machen, vorallem wenn dann noch eine Orchestrierung vorhanden ist, wie zum Beispiel Kubernetes, ist viel möglich.
 
 ### 01 Docker 
 Docker ist eine Freie Software zur Isolierung von Anwendungen mit Hilfe von Containervirtualisierung. Docker vereinfacht die Bereitstellung von Anwendungen, weil sich Container, die alle nötigen Pakete enthalten, leicht als Dateien transportieren und installieren lassen. Container gewährleisten die Trennung und Verwaltung der auf einem Rechner genutzten Ressourcen. 
@@ -24,7 +16,7 @@ Wie man gut erkennen kann, geht es hier um den Vergleich zwischen virtuellen Mas
 ### 03 Webserver einrichten
 Zuerst muss das Image erstellt werden. Mit docker build.
 
-![alt text](Bilder/6.JPG "VMvsDocker")
+![alt text](bilder/vmvsdocker.png "VMvsDocker")
 
 
 Anschliessend wird der Port 5050 konfiguriert für den Webserver.
@@ -147,3 +139,17 @@ Ich hatte vor dem Modul noch fast gar kein Wissen über Docker oder Containerisi
 ### Reflexion
 
 Ich finde dass ich durchaus behaupten kann, dass ich etwas unter dem Begriff Container nun verstehe, nun muss ich jedoch nur noch lernen, das gelernte geschickt einzusetzen.
+
+
+Noch zum Dokumentieren:
+
+Cadvisor
+
+Webserver volume
+
+Kubernertes
+
+https://migueldoctor.medium.com/run-mysql-phpmyadmin-locally-in-3-steps-using-docker-74eb735fa1fc
+
+Ticketsystem
+
