@@ -227,6 +227,8 @@ $ docker run --ulimit cpu=12:14 amouat/stress stress --cpu 1
 
 Ich habe mich sehr auf Kubernetes gefreut, da ich den immensen Nutzungsgebiet vom Programm sehe, leider lief nicht alles wie geplant. Ich habe versucht das Ticketssystem über Kubernetes zu Orchestrieren. Als ich das nicht alleine geschafft habe, habe ich mich mit Herrn Altintas, Ardito und Aziri zusammen drangesetzt, damit ich das mit ihnen zusammen lösen kann. Jedoch hat auch dies nicht wie geplant geklappt. Wir haben Pods, Deployments und einen Service erstellt und bis spät in die Nacht versucht herauszufinden an was es liegt, leider sind wir nicht auf die Lösung gekommen.
 
+Alle Tests wurden auf dem PC von Dion gemacht, daher kann ich die Konfigurationen leider nicht direkt auf meinem Notebook zeigen. Die Kubernetes Dateien sind aber im Kubernetes Ordner abgelegt, falls man nachvollziehen will, was wir versucht haben zu machen, kann man sich diese gerne anschauen.
+
 ### Vergleich Vorwissen - Wissenszuwachs
 
 Ich hatte vor dem Modul noch fast gar kein Wissen über Docker oder Containerisierung. Nun kann ich aber bereits kleine Services bereitstellen, da mich das Thema jedoch unheimlich interessiert, werde ich am Ball bleiben und noch mehr versuchen dazu zu lernen. Im Geschäft habe ich eine Testumgebung bei der ich demnächst 3 Linux Maschinen über Ansible ausetzen werden und diese dann über Docker betrieben werde.
